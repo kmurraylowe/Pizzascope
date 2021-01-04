@@ -5,6 +5,9 @@ document.querySelector("#date-btn").addEventListener("click", date)
 function date() {
 let month = document.querySelector("#date").value
 let date = document.querySelector("#day").value
+const audio = document.querySelector("#audio-dominos")
+	audio.play()
+
 if (month == 12 && date >=22 || month == 1 && date <=19){
 	document.querySelector('#febuary').classList.add('hidden')
 	document.querySelector("#january").classList.add('hidden')
@@ -202,3 +205,72 @@ if (month == 11 && date >=22 || month == 12 && date <=21) {
 
 
 	}
+
+
+
+
+
+
+	// A simple calculator that has two inputs and returns the result of +,-,/,* somewhere in the DOM
+
+// store values from two seperates inputs
+// set up functions(a,b) with 2 arguments for each maths operator
+// print result to innertext
+
+
+document.querySelector("#add").addEventListener("click", addition)
+document.querySelector("#minus").addEventListener("click", subtraction)
+document.querySelector("#multi").addEventListener("click", multiplication)
+document.querySelector("#divi").addEventListener("click", division)
+document.querySelector("#clear").addEventListener("click", clear)
+
+
+
+function addition(){
+let f = Number(document.querySelector("#first").value)
+let s = Number(document.querySelector("#second").value)
+    let result = f+s
+	console.log(result)
+     document.querySelector("#result").innerText = result
+
+	}
+
+
+function subtraction(){
+let f = Number(document.querySelector("#first").value)
+let s = Number(document.querySelector("#second").value)
+    let result = f-s
+	console.log(result)
+     document.querySelector("#result").innerText = result
+
+	}
+
+function multiplication(){
+let f = Number(document.querySelector("#first").value)
+let s = Number(document.querySelector("#second").value)
+    let result = f*s
+	console.log(result)
+     document.querySelector("#result").innerText = result
+
+	}
+
+function division(){
+let f = Number(document.querySelector("#first").value)
+let s = Number(document.querySelector("#second").value)
+    let result = f/s
+	console.log(result)
+     document.querySelector("#result").innerText = result
+
+	}
+// CLEARS THE INPUTS AND RESULTS
+function clear(){
+	const audio = document.querySelector("#audio")
+	audio.play()
+let inputs = document.querySelectorAll('input')
+inputs.forEach(input => input.value = '')
+	
+	let result = " "
+	document.querySelector("#result").innerText = result
+}
+ 
+

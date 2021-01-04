@@ -27,9 +27,10 @@ body {
 
 .hidden {
 	display: none;
+
 }
 
-section {
+.selector {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -42,18 +43,77 @@ div {
 }
 
 .selector {
-	margin-bottom: 10vh;
+	margin-bottom: 5vh;
 }
 
 p {
 	font-size: 20px;
-	width: 50vw;
+	width: 30vw;
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 50px;
 	font-weight: bold;
 }
+.header {
+	display: flex;
+	justify-content: center;
+	height: 10vh;
+	color: darkblue;
+	font-size: 40px;
+}
+.btn {
+	
+	background: lightblue;
+
+}
+
+#result {
+	font-size: 90px;
+	color: royalblue;
+}
+.main-container {
+	display: flex;
+	
+}
+
+.left-container {
+	width: 50%;
+	
+}
+.right-container {
+	width: 50%;	
+	
+}
+
+.pizza-container { 
+	font-family: 'Hanalei Fill', cursive;
+	letter-spacing: 150%;
+}
+
+
+#cal-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	
+}
+
+#input-container {
+	display: flex;
+	flex-direction: row;
+	
+	
+}
+
+#operand-container {
+	
+	display: flex;
+	flex-direction: row;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/

@@ -9,16 +9,25 @@
 		<title>Mystic Pizza Selector</title>
 
 		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<section>
+
+		<header>
+			<h1 class="header">Kyes Christmas Homework</h1>
+		</header>
+
+
+		<section class="main-container">
+		<section class="left-container">
 			<section class="selector">
-		<h1 class="heading">Which Pizza are you?</h1>
-		 	 <label for="Date">Date of birth:</label>
+		<h1 class="heading">Your own Pizza Astrology guide.</h1>
+		 	 <label for="Date">Select your date of birth:</label>
  			 <!-- <input type="text" id="date"> -->
- 			 <select name="Date" id="date">
+ 			 <select class="btn" name="Date" id="date">
  			 	<option value="1">January</option>
  			 	<option value="2">Febuary</option>
  			 	<option value="3">March</option>
@@ -33,7 +42,7 @@
  			 	<option value="12">December</option>
  			 </select>
 
- 			 <select name="day" id="day">
+ 			 <select class="btn" name="day" id="day">
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -66,60 +75,84 @@
 				<option value="30">30</option>
 				<option value="31">31</option>
  			 </select>
- 			 <input id="date-btn" type="submit">
+ 			 <button class="btn" id="date-btn" type="submit" >Curious?</button>
+ 			 <audio id="audio-dominos" src="css/dominos.wav"></audio>
  			</section>
 
  			<section class="pizza-container">
  			 <div id="january" class="hidden">
- 			 	<h3>Aquarius Veggie</h3>
- 			 	<p>You will always choose an interesting pizza, one that’s topped with yummy, feel-good ingredients like fresh veggies and farmers market cheeses. Even down to your pizza, you like to keep things original.</p>
+ 			 	<h3><strong>Aquarius:</strong> Veggie</h3>
+ 			 	<p>You will always choose the most interesting pizza, one that’s topped with yummy, feel-good ingredients like fresh veggies and farmers market cheeses. Even down to your pizza, you like to keep things original.</p>
  			 	<img src="css/img/veggie.jpg"></div>
 
- 			 <div id="febuary" class="hidden"><h3>Pisces Cheese & Basil</h3>
+ 			 <div id="febuary" class="hidden"><h3><strong>Pisces:</strong> Cheese & Basil</h3>
  			 	<p>Imagitive as well as sensitive, you are drawn to the fresh ingredients unique texture. The perfect meal lacking any emotional burden.</p>
  			 	<img src="css/img/cheese.jpg"></div>
 
- 			 <div id="march" class="hidden"><h3>Aries Firebreather</h3>
+ 			 <div id="march" class="hidden"><h3><strong>Aries:</strong> Firebreather</h3>
  			 	<p>There’s no denying your spice for life, so you need a pizza to match. Spicy salami pizza is a bold choice — it has the subtle kick, doughy crust, and rich, cheesy goodness that you crave.</p>
  			 	<img src="css/img/fire.jpg"></div>
 
- 			 <div id="april" class="hidden"><h3>Taurus Prawn & Arugula</h3>
+ 			 <div id="april" class="hidden"><h3><strong>Taurus:</strong> Prawn & Arugula</h3>
  			 	<p>A fancy pie for a fancy person, You enjoy lifes great pleasures and seafood is among the most delectable of toppings, this one takes a sophisticated palate to enjoy the crunchy bite of arugula leaves on your pizza</p>
  			 	<img src="css/img/prawn.jpg"></div>
 
- 			 <div id="may" class="hidden"> <h3>Gemmini Hawaiian</h3>
- 			 	<p>You like great company almost as much as you like great food. And since hte Hawaiian pizza is arguably the most polarizing, you cant help but grab a slice of this conversation starter.</p>
+ 			 <div id="may" class="hidden"> <h3><strong>Gemmini:</strong> Hawaiian</h3>
+ 			 	<p>You like great company almost as much as you like great food. And since the Hawaiian pizza is arguably the most polarizing, you cant help but grab a slice of this conversation starter.</p>
  			 	<img src="css/img/pineapple.jpg"></div>
 
- 			 <div id="june" class="hidden"><h3>Cancer Ham and cheese</h3>
+ 			 <div id="june" class="hidden"><h3><strong>Cancer:</strong> Ham and cheese</h3>
  			 	<p>As classic as it comes, you dont like to fix whats not broken, stick to the basics. Best ordered from your favorite place and eaten at home with your favorite people.</p>
  			 	<img src="css/img/ham.jpg"></div>
 
- 			 <div id="july" class="hidden"><h3>Leo Supreme</h3>
+ 			 <div id="july" class="hidden"><h3><strong>Leo:</strong> Supreme</h3>
  			 	<p>Load it up with spices, meats, cheeses, and veggies. You like your pizza to be as avant-garde as your life. Prefered it served at a fancy Italian restaurant with a hot date and a bottle of red wine.</p>
  			 	<img src="css/img/supreme.jpg"></div>
 
- 			 <div id="august" class="hidden"><h3>Virgo Margherita</h3>
+ 			 <div id="august" class="hidden"><h3><strong>Virgo:</strong> Margherita</h3>
  			 	<p>It might be plain and simple, but a Margherita pizza is undoubtedly elegant, much like you. The ratio of sauce, cheese, and basil must be perfectly executed for the pizza to truly come alive. Bonus points for eating with a knife and fork.</p>
  			 	<img src="css/img/margherita.jpg"></div>
 
- 			 <div id="september" class="hidden"><h3>Libra Avocado and chicken</h3>
+ 			 <div id="september" class="hidden"><h3><strong>Libra:</strong> Avocado and chicken</h3>
  			 	<p>Perfeclty balanced just how all things should be, rich creative ingredients are your go to and you cannot go wrong with cremey avocado and chicken, all that is missing is afew truffle shavings. </p>
  			 	<img src="css/img/avacado.jpg"></div>
 
- 			 <div id="october" class="hidden"><h3>Scorpio Meatlovers</h3>
+ 			 <div id="october" class="hidden"><h3><strong>Scorpio:</strong> Meatlovers</h3>
  			 	<p>Load up the pizza with sausage, pepperoni, ham, and bacon for a savory, spicy, and scrumptious slice of pie that’s sure to satiate your cravings. Oh, and your probably not big on sharing, so you might need to order another one</p>
  			 	<img src="css/img/meat.jpg"></div>
 
- 			 <div id="november" class="hidden"><h3>Sagittarius Chicken and bacon</h3>
+ 			 <div id="november" class="hidden"><h3><strong>Sagittarius:</strong> Chicken and bacon</h3>
  			 	<p>Adventerous just like you, bursting with exciting flavors. The tangy punch of the barbecue sauce mixed with the savory chicken and sweet onions is a fun combo you can get behind. best taken away and eaten outside in the sunset.</p>
  			 	<img src="css/img/chicken.jpg"></div>
 
- 			 <div id="december" class="hidden"><h3>Capricorn Pepperoni</h3>
+ 			 <div id="december" class="hidden"><h3><strong>Capricorn:</strong> Pepperoni</h3>
  			 	<p>You do things by the book, so a traditional pepperoni pizza is right up your alley. One tried-and-true topping is all you need on your slice of pie. For maximum enjoyment, get it from her favorite local pizza joint as you're quite the loyalist.</p>
  			 	<img src="css/img/pepperoni.jpg"></div>
  			 </section>
  		</section>
+
+ 	<section class="right-container">
+ 				<section id="cal-container">
+				<h1>A Very Simple Calculator</h1>
+				 <div id="input-container">
+					<input class="btn" id="first" type="number" name="first" placeholder="Enter a number">
+					<input class="btn" id="second" type="number" name="second" placeholder="Enter a number">
+	 			</div>
+				 <div id="operand-container">
+					<button class="btn" id="add"> + </button>
+					<button class="btn" id="minus"> - </button>
+					<button class="btn" id="multi"> * </button>
+					<button class="btn" id="divi"> / </button>
+					<button class="btn" id="clear"> Clear </button>
+					<audio id="audio" src="css/fart.wav"></audio>
+
+				</div>
+				<h3>RESULT</h3>
+			<h3 id="result"></h3>
+		</section>
+ 	</section>
+</section>
+
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
