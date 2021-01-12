@@ -231,6 +231,7 @@ let f = Number(document.querySelector("#first").value)
 let s = Number(document.querySelector("#second").value)
     let result = f+s
 	console.log(result)
+	document.querySelector("#resultContainer").classList.remove('hidden')
      document.querySelector("#result").innerText = result
 
 	}
@@ -241,6 +242,7 @@ let f = Number(document.querySelector("#first").value)
 let s = Number(document.querySelector("#second").value)
     let result = f-s
 	console.log(result)
+	document.querySelector("#resultContainer").classList.remove('hidden')
      document.querySelector("#result").innerText = result
 
 	}
@@ -250,6 +252,7 @@ let f = Number(document.querySelector("#first").value)
 let s = Number(document.querySelector("#second").value)
     let result = f*s
 	console.log(result)
+	document.querySelector("#resultContainer").classList.remove('hidden')
      document.querySelector("#result").innerText = result
 
 	}
@@ -259,6 +262,7 @@ let f = Number(document.querySelector("#first").value)
 let s = Number(document.querySelector("#second").value)
     let result = f/s
 	console.log(result)
+	document.querySelector("#resultContainer").classList.remove('hidden')
      document.querySelector("#result").innerText = result
 
 	}
@@ -271,6 +275,31 @@ inputs.forEach(input => input.value = '')
 	
 	let result = " "
 	document.querySelector("#result").innerText = result
+	document.querySelector("#resultContainer").classList.add('hidden')
 }
  
+
+ // CLOCK
+
+ const secondHand = document.querySelector('.second-hand')
+const minuteHand = document.querySelector(`.min-hand`)
+const hourHand = document.querySelector(`.hour-hand`)
+
+    function setDate(){
+     const now = new Date()
+     const seconds = now.getSeconds()
+     const secondsDegrees = ((seconds/60) * 360) + 90
+     secondHand.style.transform = `rotate(${secondsDegrees}deg)`
+     
+     const mins = now.getMinutes()
+     const minuteDegrees = ((mins/60) *360) + 90
+     minuteHand.style.transform = `rotate(${minuteDegrees}deg)`
+
+     const hours = now.getHours()
+     const hourDegrees = ((hours/12) *360) + 90
+     hourHand.style.transform = `rotate(${hourDegrees}deg)`
+
+
+    }
+    setInterval(setDate, 1000)
 
